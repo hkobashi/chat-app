@@ -6,7 +6,7 @@
     <%= csp_meta_tag %>
     <link rel="stylesheet" type="text=text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%# 9/30 ルーティングを設定して”rails g controller messages index"
         実行後ルートパスにアクセスするも以下のエラーが出ていた
           Webpacker::Manifest::MissingEntryError in Messages#index
