@@ -20,7 +20,7 @@ class MessagesController < ApplicationController
   end
 
   def message_params
-    params.require(:message).permit(:content).merge(user_id: current_user.id)
+    params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
     #messageテーブルから送信フォーム内のデータ(conten)を取り出して
     #roomテーブルに紐付いているcurrent_user.idを連結させる
   end

@@ -15,7 +15,8 @@
     <div class="message-content">
       <%= message.content %>
       <!-- 投稿したメッセージ内容を記述する -->
-
     </div>
+    <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+    <%# message.imageが存在する場合のみ実行される%>
   </div>
 </div>
